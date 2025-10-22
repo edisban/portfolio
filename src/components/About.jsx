@@ -27,21 +27,6 @@ export default function About() {
           <span className="badge">UI/UX</span>
           <span className="badge">SQL</span>
         </div>
-
-        <div style={{ marginTop: "18px" }}>
-          <strong>Links</strong>
-          <div className="socials">
-            <a className="btn" href="https://www.instagram.com/edis_bantak/" target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
-            <a className="btn" href="https://github.com/edisban" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a className="btn" href="https://www.linkedin.com/in/edis-bantak-26a2a0375/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
