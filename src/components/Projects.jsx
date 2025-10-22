@@ -1,17 +1,17 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
+      title: "Certificate One",
       desc: "A modern, responsive web project showcasing clean design and interaction.",
       link: "/Learn_React.pdf",
     },
     {
-      title: "Project Two",
+      title: "Certificate Two",
       desc: "Another example of creative UI and problem-solving through modern tools.",
       link: "/Learn_React_Advanced.pdf",
     },
     {
-      title: "Project Three",
+      title: "Certificate Three",
       desc: "An interactive project demonstrating functionality and good UX practices.",
       link: "#",
     },
@@ -40,7 +40,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project
+                  View Certificate
                 </a>
               </div>
             </div>
