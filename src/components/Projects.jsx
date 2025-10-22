@@ -3,12 +3,12 @@ export default function Projects() {
     {
       title: "Project One",
       desc: "A modern, responsive web project showcasing clean design and interaction.",
-      link: "certificates/Learn React.pdf",
+      link: "/Learn React.pdf",
     },
     {
       title: "Project Two",
       desc: "Another example of creative UI and problem-solving through modern tools.",
-      link: "/certificates/Learn React Advanced.pdf.",
+      link: "/Learn React Advanced.pdf.",
     },
     {
       title: "Project Three",
