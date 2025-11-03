@@ -2,27 +2,23 @@ export default function Projects() {
   const projects = [
     {
       title: "Certificate One",
-      desc: "A modern, responsive web project showcasing clean design and interaction.",
+      desc: "Learn React",
       link: "/Learn_React.pdf",
     },
     {
       title: "Certificate Two",
-      desc: "Another example of creative UI and problem-solving through modern tools.",
+      desc: "Learn React Advanced",
       link: "/Learn_React_Advanced.pdf",
     },
-    {
-      title: "Certificate Three",
-      desc: "An interactive project demonstrating functionality and good UX practices.",
-      link: "#",
-    },
+
   ];
 
   return (
     <section id="projects">
-      <div className="kicker">Projects</div>
-      <h2>My Projects</h2>
+      <div className="kicker">Certificates</div>
+      <h2>My certificates</h2>
       <p className="lead">
-        A selection of recent work. Click to explore each project in detail.
+        Selected Online Course Certificates. Click to view details and the certificates.
       </p>
 
       <div className="grid">
