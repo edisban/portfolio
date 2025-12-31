@@ -8,7 +8,7 @@ export default function Education() {
         <div className="item">
           <strong>Department:</strong> Applied Informatics (Πανεπιστήμιο Μακεδονίας — Εφαρμοσμένη Πληροφορική)
           <br />
-          <strong>Status:</strong> Final-year student, expected graduation in 2025.
+          <strong>Status:</strong> Final-year student.
           <br />
           <strong>Focus:</strong> Software Engineering, Web Technologies, Databases, and Information Systems.
         </div>

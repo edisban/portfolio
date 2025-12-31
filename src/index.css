@@ -268,7 +268,7 @@ p.lead {
   display: block;
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  background: #1ea7e8;
   transition: width 1s ease;
 }
 

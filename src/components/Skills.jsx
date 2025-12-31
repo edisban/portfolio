@@ -33,14 +33,15 @@ export default function Skills() {
   }, []);
 
   const skills = [
-    ["HTML", "devicon-html5-plain colored", 60, "Basic"],
-    ["CSS", "devicon-css3-plain colored", 55, "Basic"],
-    ["JavaScript", "devicon-javascript-plain colored", 50, "Basic"],
-    ["React", "devicon-react-original colored", 45, "Basic"],
-    ["Next.js", "devicon-nextjs-original-wordmark", 40, "Basic"],
-    ["SQL", "devicon-mysql-plain colored", 50, "Basic"],
-    ["Power BI", "devicon-powerbi-plain colored", 40, "Basic"],
-    ["Excel", "devicon-msdos-plain", 50, "Basic"],
+    ["React", "devicon-react-original colored", 70, "Intermediate"],
+    ["TypeScript", "devicon-typescript-plain colored", 70, "Intermediate"],
+    ["Java", "devicon-java-plain colored", 70, "Intermediate"],
+    ["Spring Boot", "devicon-spring-plain colored", 70, "Intermediate"],
+    ["PostgreSQL", "devicon-postgresql-plain colored", 70, "Intermediate"],
+    ["JavaScript", "devicon-javascript-plain colored", 70, "Intermediate"],
+    ["HTML", "devicon-html5-plain colored", 70, "Intermediate"],
+    ["CSS", "devicon-css3-plain colored", 70, "Intermediate"],
+    ["Git", "devicon-git-plain colored", 70, "Intermediate"],
   ];
 
   return (
