@@ -44,7 +44,7 @@ export default function Header() {
 
           {/* Μόνο View CV */}
           <a
-            href="/edis_bantak_cv.pdf"
+            href="/EDIS-BANTAK-fullstack.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="cta"
@@ -78,7 +78,7 @@ export default function Header() {
         </a>
         {/* Μόνο View CV και στο mobile */}
         <a
-          href="/edis_bantak_cv.pdf"
+          href="/EDIS-BANTAK-fullstack.pdf"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setOpen(false)}
