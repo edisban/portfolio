@@ -13,6 +13,53 @@ body {
   color: #e5e7eb;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.35;
+  filter: blur(0px);
+  animation: auroraDrift 22s ease-in-out infinite alternate;
+}
+
+body::before {
+  top: -160px;
+  left: -120px;
+  background: radial-gradient(circle at 30% 30%, rgba(79, 70, 229, 0.6), transparent 65%);
+}
+
+body::after {
+  bottom: -180px;
+  right: -100px;
+  background: radial-gradient(circle at 70% 40%, rgba(6, 182, 212, 0.65), transparent 70%);
+  animation-delay: 8s;
+}
+
+:root[data-theme="light"] body::before {
+  background: radial-gradient(circle at 30% 30%, rgba(79, 70, 229, 0.4), transparent 65%);
+}
+
+:root[data-theme="light"] body::after {
+  background: radial-gradient(circle at 70% 40%, rgba(14, 165, 233, 0.45), transparent 70%);
+}
+
+@keyframes auroraDrift {
+  from {
+    transform: translate3d(-40px, 0, 0) scale(0.92);
+  }
+  to {
+    transform: translate3d(40px, -20px, 0) scale(1.08);
+  }
 }
 
 /* === LIGHT THEME === */
@@ -153,6 +200,35 @@ section {
   margin: 0 auto;
   padding: 60px 20px;
 }
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(32px) scale(0.98);
+  filter: blur(6px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.7s ease;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    overflow-x: hidden;
+  }
+  .section-reveal,
+  .section-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+  body::before,
+  body::after {
+    animation: none;
+  }
+}
 .kicker {
   color: #06b6d4;
   text-transform: uppercase;
@@ -188,10 +264,6 @@ p.lead {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-.profile-pic:hover {
-  transform: scale(1.08);
 }
 .profile-pic img {
   width: 100%;
@@ -223,8 +295,6 @@ p.lead {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.06);
 }
-
-/* === BADGES === */
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -254,6 +324,13 @@ p.lead {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.skills-group {
+  margin-bottom: 28px;
+}
+.skills-group:last-of-type {
+  margin-bottom: 0;
 }
 .bar {
   height: 8px;
