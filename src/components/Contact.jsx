@@ -13,7 +13,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <strong>Location:</strong> Xanthi, GR
+              <strong>Location:</strong> Athens, GR
             </div>
           </div>
           <div className="socials" style={{ marginTop: "12px" }}>
